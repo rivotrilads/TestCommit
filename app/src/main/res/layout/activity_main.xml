@@ -5,17 +5,19 @@
     style="@style/TextAppearance.AppCompat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:mipmap/sym_def_app_icon"
+    android:background="#9A9A9A"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:layout_width="332dp"
+        android:layout_height="53dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="Rivotril ADS 2020"
+        android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="50dp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -25,7 +27,7 @@
         app:layout_constraintVertical_bias="0.253" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botao"
         android:layout_width="300dp"
         android:layout_height="47dp"
         android:layout_marginBottom="64dp"
