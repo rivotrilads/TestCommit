@@ -5,36 +5,57 @@
     style="@style/TextAppearance.AppCompat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9A9A9A"
+    android:background="@android:color/background_light"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="332dp"
-        android:layout_height="53dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Rivotril ADS 2020"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
 
     <Button
         android:id="@+id/botao"
         android:layout_width="300dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/botao_person"
+        android:clickable="true"
+        android:onClick="msg"
         android:text="Clique para acessar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="332dp"
+            android:layout_height="53dp"
+            android:text="Hello World"
+            android:textAlignment="center"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="425dp"
+        android:layout_height="272dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/botao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

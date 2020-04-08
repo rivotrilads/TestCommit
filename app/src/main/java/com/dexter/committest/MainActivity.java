@@ -19,15 +19,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //
+        getSupportActionBar().hide();
+
+
         b = findViewById(R.id.botao);
         t = findViewById(R.id.label);
 
-        b.setOnClickListener(new View.OnClickListener() {
+        /* b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Testando Mensagem de Toast", Toast.LENGTH_SHORT).show();
             }
-        });
+        }); */
+    }
+
+    public void msg(View v){
+        Toast.makeText(MainActivity.this, "Testando Mensagem de Toast", Toast.LENGTH_SHORT).show();
     }
 
 }
